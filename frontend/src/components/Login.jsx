@@ -24,7 +24,7 @@ const Login = () => {
         };
 
         axios
-            .post('http://localhost:3000/user/login', payload)
+            .post(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/user/login`, payload)
             .then((res) => {
                 setLoading(false);
                 toast.success('Login Successful', { className: 'toastify-container' });

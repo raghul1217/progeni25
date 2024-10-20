@@ -28,7 +28,7 @@ function Registration() {
             mobile: mobile,
         };
 
-        axios.post('http://localhost:3000/user/register', payload)
+        axios.post(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/user/register`, payload)
             .then((res) => {
                 setLoading(false);
                 toast.success("Registration Successful", { className: 'toastify-container' });

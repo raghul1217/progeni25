@@ -18,7 +18,7 @@ const Profile = () => {
     };
 
     axios
-      .post("http://localhost:3000/user/profile", {}, header)
+      .post(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/user/profile`, {}, header)
       .then((res) => {
         setLoading(false);
         setData(res.data.data);

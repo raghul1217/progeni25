@@ -4,9 +4,9 @@ const User = require('../modal/Users');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
-const secreteKey = "swer&*&^#*&^@HJHjsdhfksdfhskfhw9853734598374";
+const secreteKey = process.env.JWT_SECRET;
 
-// Middleware to generate the next sequence ID
+
 async function getNextSequenceId() {
     // Fetch the latest user based on sequenceId
     const latestUser = await User.findOne().sort({ sequenceId: -1 });
@@ -29,7 +29,6 @@ router.post('/register', async (req, res) => {
 
         const hashPassword = await bcrypt.hash(password, 10);
         
-        // Generate sequenceId
         const sequenceId = await getNextSequenceId();
 
         const newUser = new User({ 
@@ -63,7 +62,7 @@ router.post('/login', async (req, res) => {
             return res.status(400).json({ status: false, message: "Invalid Credential" });
         }
 
-        const token = jwt.sign({ id: user._id, email: user.email }, secreteKey, { expiresIn: '1hr' });
+        const token = jwt.sign({ id: user._id, email: user.email }, secreteKey, { expiresIn: '30d' });
 
         return res.status(201).json({ status: true, message: "Login successful", token: token });
     } catch (error) {
@@ -90,7 +89,7 @@ router.post('/profile', async (req, res) => {
                 department: user.department,
                 collegeName: user.collegeName,
                 mobile: user.mobile,
-                paymentStatus: user.paymentStatus // Include paymentStatus in the response
+                paymentStatus: user.paymentStatus 
             };
 
             return res.status(200).json({ status: true, message: "Profile Data", data: userData });

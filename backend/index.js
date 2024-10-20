@@ -25,6 +25,6 @@ mongoose.connect(process.env.DATABASE_URL)
     .then(() => console.log("DB connected successfully"))
     .catch((err) => console.log("Failed to connect database ", err))
 
-app.listen(3000, () => {
+app.listen(process.env.PORT, () => {
     console.log("server is running.. 3000")
 })

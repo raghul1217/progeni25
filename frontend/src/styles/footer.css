@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer {
+  background: linear-gradient(180deg, #111132, #0c0c1d);
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap; /* For responsiveness */
+  width: 100%;
+  max-width: 1200px;
+}
+
+.left-side,
+.center-section,
+.right-side {
+  margin: 20px;
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.left-side{
+  width: 100%;
+}
+
+
+
+.contact-image-container p {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.center-section h4,
+.right-side h4 {
+  color: white;
+  margin-bottom: 15px;
+  font-size: 24px;
+  position: relative;
+}
+
+.center-section h4::after,
+.right-side h4::after {
+  content: '';
+  width: 50px;
+  height: 3px;
+  background-color: #fff;
+  display: block;
+  margin: 10px auto 0 auto;
+}
+
+.center-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.center-section ul li {
+  margin: 10px 0;
+}
+
+.center-section ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.center-section ul li a:hover {
+  color: #0073e6; /* Change color on hover */
+}
+
+.contact-numbers p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: white;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #0073e6; /* Change color on hover */
+}
+
+.footer-bottom {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  color: white;
+}
+
+.footer-bottom hr {
+  border: none;
+  border-top: 1px solid #555;
+  margin-bottom: 10px;
+}
+
+.footer-bottom p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-side,
+  .center-section,
+  .right-side {
+    margin: 10px 0;
+  }
+
+  .contact-image {
+    width: 250px;
+    height: 200px;
+  }
+}

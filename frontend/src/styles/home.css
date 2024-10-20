@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+@font-face {
+    font-family: 'AlphaCentauri';
+    src: url('./assets/planetfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.home-bg {
+    background: url(../assets/planet-06.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh; /* Use min-height to allow content to dictate height */
+    display: flex;
+    flex-direction: column; /* Ensure vertical layout on mobile */
+}
+
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 50px 30px;
+    min-height: 100vh;
+    margin-top: 40px; /* Ensure it grows with content */
+}
+
+.home-container .home-content1 h1 {
+    text-align: center;
+    font-size: 45px;
+    font-family: 'AlphaCentauri', 'lexend', 'sans-serif';
+    font-weight: 900;
+}
+
+.home-container .home-content1 img {
+    width: 200px;
+    height: 200px;
+}
+
+.home-content1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 2;
+    gap: 20px;
+}
+
+.home-content1 p {
+    font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 25px;  
+  width: 90%;
+  text-align: center;
+}
+
+.home-date-container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.home-date{
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    display: flex;
+}
+
+.cash-h{
+font-family: "space mono", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 38px;  
+  text-align: center;
+}
+
+
+.reg-h{
+    font-family: "Space Grotesk", sans-serif;
+          font-optical-sizing: auto;
+          font-weight: 500;
+          font-style: normal;
+          font-size: 30px;  
+          width: 80%;
+          text-align: center;
+}
+
+.home-content2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 0 100px;
+}
+
+/* Keyframes for floating effect */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px); /* Float upwards */
+    }
+    100% {
+        transform: translateY(0px); /* Float back down */
+    }
+}
+
+/* Home Content 2 Styles */
+.home-content2 img {
+    width: 350px;
+    height: 350px;
+    animation: float 3s ease-in-out infinite; /* Apply the floating animation */
+}
+
+.home-content2 h4 {
+    font-size: 20px;
+}
+
+.home-btn {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    font-family: 'AlphaCentauri';
+}
+
+/* Neon glow effect for the register button */
+/* Updated Space-themed Button */
+.register-btn {
+    background-color: transparent;
+    color: white;
+    font-family: 'AlphaCentauri';
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    outline: none;
+    border-radius: 5px;
+    padding: 12px 40px;
+    position: relative;
+    font-size: 18px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+    color: white;
+    background: linear-gradient(0deg, rgb(106, 2, 116) 0%, rgb(101, 4, 125) 100%);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.4), 0 0 50px rgba(255, 255, 255, 0.4);
+}
+
+.register-btn::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.5), transparent 60%);
+    transform: rotate(45deg);
+    z-index: -1;
+    animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: translateY(0) rotate(45deg);
+        opacity: 0.5;
+    }
+    50% {
+        transform: translateY(-20px) rotate(45deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0) rotate(45deg);
+        opacity: 0.5;
+    }
+}
+
+.register-btn:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.8), 0 0 50px rgba(255, 255, 255, 0.8);
+}
+
+/* Particle animation effect */
+.register-btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3), transparent);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.register-btn:hover::after {
+    opacity: 1;
+}
+
+#neon-btn {
+    font-family: 'AlphaCentauri', 'lexend', 'sans-serif';
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+
+.login-btn {
+    border: 2px solid white;
+    outline: none;
+    border-radius: 2px;
+    padding: 4px 40px;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+
+    .home-bg {
+        min-height: auto; /* Allow content to dictate height */
+    }
+
+    .home-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; /* Stack elements vertically */
+        padding: 20px 10px; /* Reduce padding */
+        min-height: 100vh;
+        margin-top: 60px; /* Allow content to fill screen */
+    }
+
+    .home-container .home-content1 img {
+        width: 170px;
+        height: 170px;
+    }
+
+    .home-container .home-content1 h1 {
+        text-align: center;
+        font-size: 25px;
+        font-family: "AlphaCentauri" ,"Eudoxus Sans", sans-serif;
+        font-weight: 800;
+    }
+
+    .home-container .home-content1 p{
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .cash-h{
+        font-size: 20px;
+    }
+
+    .home-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .home-btn p {
+        text-align: center;
+    }
+
+    .home-content2 {
+        padding: 10px;
+        padding-top: 10px; /* Reduce top padding */
+        text-align: center;
+    }
+
+    .home-content2 img {
+        width: 250px; /* Reduce image size for mobile */
+        height: 250px;
+    }
+
+    .register-btn a{
+        width: 80%;
+        align-items: center;
+        font-family: "Lexend", sans-serif;
+    }
+
+    .home-date-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+    }
+
+    .home-date{
+        font-size: 24px;
+    }
+}

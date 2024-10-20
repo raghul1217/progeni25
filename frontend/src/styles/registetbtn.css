@@ -1,0 +1,156 @@
+:root {
+    --purple-100: #e0c4f1;
+    --purple-200: #a66bca;
+    --purple-300: #8f3f91;
+    --purple-400: #6c2b6f;
+    --purple-500: #5c1a50;
+    --white: #ffffff;
+}
+
+.bg {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 8px; /* Adjusted for rounded corners */
+}
+
+.bg::before,
+.bg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+.bg::before {
+    background: linear-gradient(
+        45deg,
+        var(--purple-100) 0%,
+        var(--purple-200) 100%
+    );
+    filter: blur(10px);
+    z-index: 1;
+}
+
+.bg::after {
+    background: linear-gradient(
+        45deg,
+        var(--purple-300) 0%,
+        var(--purple-400) 100%
+    );
+    z-index: 2;
+    transform: scale(0.9);
+}
+
+.wrap {
+    position: relative;
+    overflow: hidden;
+    z-index: 3;
+    height: 80px;
+    width: 100%;
+}
+
+.path {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.outline {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    border-radius: inherit;
+    border: 2px solid var(--purple-500);
+    transform: translate(-50%, -50%);
+    opacity: 0.6;
+}
+
+.content {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    overflow: hidden;
+}
+
+.char {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    color: var(--white);
+    line-height: 1;
+    transition: 0.5s ease;
+}
+
+.char span {
+    position: relative;
+    display: inline-block;
+    transition: 0.5s ease;
+    overflow: hidden;
+}
+
+.char.state-1 span {
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+.char.state-1 .icon {
+    animation: icon-anim 1s forwards;
+    opacity: 1;
+    position: absolute;
+    left: 10px;
+}
+
+.char.state-2 span {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.icon {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background-color: var(--purple-500);
+    border-radius: 50%;
+    transition: 0.5s ease;
+}
+
+.icon div {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    background: linear-gradient(
+        45deg,
+        var(--purple-300) 0%,
+        var(--purple-400) 100%
+    );
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    transform: scale(0);
+    transition: 0.5s ease;
+}
+
+@keyframes icon-anim {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}

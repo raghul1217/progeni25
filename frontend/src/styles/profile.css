@@ -1,0 +1,258 @@
+/* Profile Icon (Font Awesome User Icon) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.profile-icon {
+  font-size: 80px; /* Adjusted size for larger icon display */
+  color: rgba(255, 255, 255, 0.8); /* White color with transparency */
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+}
+
+/* Info Label Icons (Font Awesome) */
+.info-label i {
+  margin-right: 10px;
+  margin-top: 5px;
+  color: rgba(255, 255, 255, 0.9); /* Adjusted color for better visibility */
+  font-size: 1rem; /* Icon size adjusted for consistency */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow for a modern look */
+  transition: color 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Smooth hover transition */
+}
+
+/* Hover Effect for Info Icons */
+.info-label i:hover {
+  color: rgba(255, 255, 255, 1); /* Full white on hover */
+}
+
+/* Profile Name */
+.profile-name {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 10px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* General Profile Container */
+.profile-navbar {
+  background: url(../assets/planet-06.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; /* This keeps the background fixed while scrolling */
+  min-height: 100vh;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Profile Card */
+.profile-card {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 100%;
+  max-width: 550px;
+  transition: all 0.3s ease-in-out;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+
+.profile-info-container h1 {
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Profile Icon Wrapper */
+.profile-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+/* Profile Info Container */
+.profile-info-container {
+  text-align: left;
+  padding: 0 15px;
+}
+
+/* Each Profile Info */
+.profile-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ffffff88;
+  margin-top: 16px;
+}
+
+.info-label {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  flex: 1;
+  border-right: 1px solid #ffffff88;
+  background-color: #ffffff22;
+  padding-left: 10px;
+}
+
+.info-label label {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 5px 0px;
+}
+
+.info-data {
+  position: relative;
+  display: flex;
+  flex: 3;
+  justify-content: left;
+  align-items: center;
+  padding-left: 0.5rem;
+}
+
+.info-data span {
+  font-size: 1rem;
+  color: white;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Underline Style */
+.info-underline {
+  width: 100%;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-top: 5px;
+}
+
+.payment-payhead{
+  margin-top: 1rem;
+}
+
+.payment-proceed{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.payment-proceed button{
+  border: 2px solid #ffffff;
+  padding: 8px 15px;
+  border-radius: 3px;
+  background-color: rgb(8, 0, 85);
+  color: white;
+  font-family: 'AlphaCentauri', 'lexend', 'sans-serif';
+  font-weight: 900;
+  font-size: 16px;
+}
+
+.payment-proceed button:hover{
+ background-color: white;
+  color: rgb(8, 0, 85); 
+}
+
+/* For mobile screens up to 768px */
+@media (max-width: 768px) {
+  .profile-container {
+    padding: 10px;
+    padding-top: 50px;
+  }
+
+  .profile-card {
+    padding: 20px 3px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .profile-name {
+    font-size: 1.7rem;
+  }
+
+  .profile-info {
+    margin-top: 12px;
+  }
+
+  .info-label label {
+    font-size: 14px;
+  }
+
+  .info-data span {
+    font-size: 0.9rem;
+  }
+
+  .profile-icon {
+    font-size: 60px; /* Smaller icon for medium screens */
+  }
+
+  .info-label i {
+    font-size: 1rem; /* Smaller icons */
+  }
+
+  .profile-info-container{
+    padding: 20px 5px;
+  }
+
+  .profile-info-container h1{
+    font-family: "poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  }
+}
+
+/* For very small mobile screens up to 480px */
+@media (max-width: 375px) {
+
+  .profile-container{
+    margin-top: 90px;
+  }
+  .profile-card {
+    padding: 5px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  .profile-name {
+    font-size: 1.2rem;
+  }
+
+  .info-label label {
+    font-size: 1.2rem;
+  }
+
+  .info-data span {
+    font-size: 0.7rem;
+  }
+
+  .profile-icon {
+    font-size: 50px; /* Smaller icon for small screens */
+  }
+
+  .info-label i {
+    font-size: 0.8rem; /* Smaller icons */
+  }
+
+  .profile-info-container{
+    padding: 0px;
+  }
+
+  .info-label{
+    padding-left: 2px;
+  }
+
+  @media (max-width: 320px){
+
+  }
+}

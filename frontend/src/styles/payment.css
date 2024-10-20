@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.payment-navbar{
+    /* background: url(../assets/cover.png); */
+    background: linear-gradient(180deg, #111132, #0c0c1d);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; /* This keeps the background fixed while scrolling */
+  min-height: 100vh;
+}
+
+.payment-info-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.gpay-div{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gpay-img{
+    width: 350px;
+    height: 400px;
+    margin-bottom: 20px;
+}
+
+.upi-info {
+    margin-top: 30px;
+    display: flex;
+    border: 2px solid #ffffff;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .upi-id {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'lexend', 'sans-serif';
+    padding: 0 10px;
+  }
+  
+  .copy-btn {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: white;
+    color: #111132;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    font-family: 'lexend', 'sans-serif';
+    font-weight: 500;
+  }
+
+  .copy-success {
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    color: white;
+    height: 20px; 
+    visibility: hidden; 
+  }
+  
+  .copy-success.visible {
+    visibility: visible;
+  }
+  
+
+/*payment verification div*/
+
+.payment-verification{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+.verify-div{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    width: 100%;
+}
+
+.verify-div h1{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'lexend', 'sans-serif';
+    text-align: left;
+    display: flex;
+    border-bottom: 3px solid white;
+    margin-bottom: 20px;
+}
+
+.payment-verification-p1 {
+    font-size: 20px;
+    font-family: 'lexend', 'sans-serif';
+    margin-bottom: 5px;
+}
+
+.payment-verification-p2{
+    font-size: 20px;
+    font-family: 'lexend', 'sans-serif';
+}
+
+.verify-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.google-form-btn{
+    border: 2px solid #ffffff;
+    padding: 8px 15px;
+    border-radius: 3px;
+    background-color: rgb(8, 0, 85);
+    color: white;
+    font-family: 'AlphaCentauri', 'lexend', 'sans-serif';
+    font-weight: 900;
+    font-size: 16px;
+    margin-top: 40px;
+  }
+  
+  .google-form-btn:hover{
+   background-color: white;
+    color: rgb(8, 0, 85); 
+  }
+
+  .gpay-div{
+    font-size: 16px;
+    font-family: 'lexend', 'sans-serif';
+  }
+
+
+/*responsive design*/
+@media(max-width: 768px){
+
+    .gpay-img{
+        width: 250px;
+        height: 300px;
+    }
+
+    .payment-info-container{
+        flex-direction: column;
+    }
+
+    .upi-id {
+        font-size: 14px;
+        font-weight: 300;
+        font-family: 'lexend', 'sans-serif';
+        padding: 0 5px;
+    }
+
+    .copy-btn{
+        font-size: 14px;
+        font-family: 'lexend', 'sans-serif';
+        font-weight: 400;
+    }
+
+    .payment-verification{
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .verify-div h1{
+        font-size: 20px;
+        letter-spacing: 0;
+    }
+
+    .payment-verification-p1{
+        font-size: 16px;
+    }
+
+    .payment-verification-p2{
+        font-size: 16px;
+    }
+}
+
+  
+  

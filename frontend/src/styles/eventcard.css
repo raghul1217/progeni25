@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, #111132, #0c0c1d);
+  padding: 0px 50px;
+}
+
+.events-wrapper {
+  padding: 20px;
+  width: 100%; /* Ensure wrapper uses full width */
+}
+
+.main-heading {
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.event-type-heading {
+  font-size: 2rem;
+  color: white;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.animated-border {
+  height: 3px;
+  background-color: #fff; /* White color for the border */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+
+.event-section {
+  margin-bottom: 50px;
+  width: 100%; /* Ensure full width of section */
+}
+
+.events-container {
+  display: grid;
+  gap: 50px;
+  justify-content: center;
+  grid-template-columns: 1fr; /* Mobile View: Single column */
+  width: 100%; /* Ensure container takes full width */
+  max-width: 100%; /* Ensure container spans 100% */
+}
+
+#card-t {
+  font-family: 'AlphaCentauri';
+  font-size: 18px;
+}
+
+/* For Tablets: 2 cards per row */
+@media (min-width: 768px) {
+  .events-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #card-t {
+    font-family: 'AlphaCentauri';
+    font-size: 20px;
+  }
+}
+
+/* For Desktops: 4 cards per row */
+@media (min-width: 1024px) {
+  .events-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.parent {
+  height: 400px;
+  width: 100%; /* Ensure parent takes full width */
+  padding: 20px;
+  perspective: 1000px;
+}
+
+.card {
+  width: 100%; /* Ensure card takes full width of parent */
+  padding-top: 100px;
+  transform-style: preserve-3d;
+  background-image: url("../assets/glitterbg.jpeg");
+  background-position: center center;
+  transition: all 0.5s ease-in-out;
+  border-radius: 10px;
+}
+
+.card:hover {
+  background-position: 80% 20%;
+  transform: rotate3d(0.5, 1, 0, 30deg);
+}
+
+.content-box {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.811);
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: rgba(0, 115, 255, 0.925) 0px 20px 50px -25px;
+  transition: all 0.5s ease-in-out;
+  padding: 50px 25px 25px 25px;
+  transform-style: preserve-3d;
+}
+
+.content-box h1 {
+  font-family: 'AlphaCentauri';
+}
+
+.card-title {
+  color: white;
+  font-size: 25px;
+  font-weight: 800;
+  transition: all 0.5s ease-in-out;
+  transform: translate3d(0px, 0px, 20px);
+}
+
+.card-title:hover {
+  transform: translate3d(0px, 0px, 50px);
+}
+
+.card-content {
+  padding-top: 15px;
+  font-size: 12px;
+  color: rgb(185, 185, 185);
+  transition: all 0.5s ease-in-out;
+  transform: translate3d(0px, 0px, 20px);
+}
+
+.card-content:hover {
+  transform: translate3d(0px, 0px, 50px);
+}
+
+.see-more {
+  display: block;
+  font-weight: 800;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: rgb(0, 136, 255);
+  padding-top: 15px;
+  transition: all 0.5s ease-in-out;
+  transform: translate3d(0px, 0px, 20px);
+}
+
+.see-more:hover {
+  transform: translate3d(0px, 0px, 50px);
+}
+
+#icon {
+  font-size: 20px;
+  color: white;
+}
+
+.date-box {
+  position: absolute;
+  top: 75px;
+  left: 25px;
+  height: 60px;
+  width: 60px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: rgb(0, 102, 255) 0px 20px 60px 0px, rgb(0, 200, 255) 0px 18px 36px -18px;
+  transform: translate3d(0px, 0px, 50px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Color filters for specific events */
+#tech-event-2,
+#non-tech-event-6 {
+  filter: hue-rotate(150deg);
+}
+
+#tech-event-3,
+#non-tech-event-7 {
+  filter: hue-rotate(300deg);
+}
+
+#tech-event-4,
+#non-tech-event-8 {
+  filter: hue-rotate(450deg);
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

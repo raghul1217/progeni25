@@ -102,7 +102,7 @@
 }
 
 .location-icon {
-  margin-right: 10px;
+  margin-right: 3px;
   color: #dd10dd;
   font-size: 18px;
 }
@@ -146,6 +146,15 @@
   .footer-gmap{
     width: 300px;
     height: 150px;
+  }
+
+  .contact-image-container p{
+    width: 95%;
+    font-size: 16px;
+  }
+
+  .footer-p{
+    font-size: 16px;
   }
 
 }

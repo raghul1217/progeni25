@@ -23,8 +23,6 @@ body{
 }
 
 .parallax h1{
-    /* padding: 0;
-    margin: 0; */
     color: white;
 }
 
@@ -45,6 +43,7 @@ body{
     height: 100%;
     position: absolute;
     z-index: 2;
+    margin-bottom: 50px;
 }
 .stars{
     background-image: url(../assets/stars.png);
@@ -56,11 +55,17 @@ body{
     z-index: 1;
 }
 
+.pilot img{
+    width: 350px;
+    height: 350px;
+    margin-bottom: 50px;
+}
+
 
 @media (max-width: 768px){
     
     .parallax{
-        height: 100vh;
+        height: 80vh;
     }
 
     .mountains{
@@ -88,6 +93,11 @@ body{
         width: 200px;
         height: 200px;
         z-index: 3;
+    }
+
+    .planets{
+        width: 600px;
+        height: 600px;
     }
 
     .parallax-content{

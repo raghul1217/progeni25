@@ -13,13 +13,13 @@ const Parallax = () => {
 
     const ystars = useTransform(scrollYProgress, [0,1], ["0%", "50%"])
     const yplanets = useTransform(scrollYProgress, [0,1], ["0%", "50%"])
-    const ypilot= useTransform(scrollYProgress, [0,1], ["0%", "30%"])
+    const ypilot= useTransform(scrollYProgress, [0,1], ["0%", "50%"])
     const ytext= useTransform(scrollYProgress, [0,1], ["0%", "100%"])
 
   return (
     <div className="parallax" ref={ref}>
         <div className="parallax-content">
-        <motion.h1 style={{y: ytext}}>Progen'i25.0</motion.h1>
+        {/* <motion.h1 style={{y: ytext}}>Progen'i25.0</motion.h1> */}
         <motion.div className="pilot" style={{y: ytext}}><img src={pilot} /></motion.div>
         </div>
         <motion.div className="mountains" ></motion.div>

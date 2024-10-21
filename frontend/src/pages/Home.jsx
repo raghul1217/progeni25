@@ -9,7 +9,6 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Parallax from '../components/Parallax';
 import RegisterBtn from '../components/RegisterBtn';
-import g258 from '../assets/g258.png';
 
 const Home = () => {
 

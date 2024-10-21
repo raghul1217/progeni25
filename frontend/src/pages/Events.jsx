@@ -32,9 +32,9 @@ const Events = () => {
     { id: 3, icon: 'fa-bullhorn', heading: 'GNIDOC', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, quisquam fugit? Quae temporibus cupiditate ea est nemo porro sapiente exercitationem!' , cardColor: '#3357FF' },
     { id: 4, icon: 'fa-briefcase', heading: 'GALATIC HACKSPRINT', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, quisquam fugit? Quae temporibus cupiditate ea est nemo porro sapiente exercitationem!' , cardColor: '#FF33A8' },
     { id: 5, icon: 'fa-palette', heading: 'PROMPT PARADOX', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, quisquam fugit? Quae temporibus cupiditate ea est nemo porro sapiente exercitationem!' , cardColor: '#FFC300' },
-    { id: 6, icon: 'fa-utensils', heading: 'UNIVERSAL HUNT', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, quisquam fugit? Quae temporibus cupiditate ea est nemo porro sapiente exercitationem!' , cardColor: '#DAF7A6' },
+    { id: 6, icon: 'fa-running', heading: 'UNIVERSAL HUNT', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, quisquam fugit? Quae temporibus cupiditate ea est nemo porro sapiente exercitationem!' , cardColor: '#DAF7A6' },
     { id: 7, icon: 'fa-music', heading: 'GALATIC TALES', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, quisquam fugit? Quae temporibus cupiditate ea est nemo porro sapiente exercitationem!' , cardColor: '#C70039' },
-    { id: 8, icon: 'fa-running', heading: 'QUIZSPAC', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, quisquam fugit? Quae temporibus cupiditate ea est nemo porro sapiente exercitationem!' , cardColor: '#900C3F' }
+    { id: 8, icon: 'fas fa-question-circle', heading: 'QUIZSPAC', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, quisquam fugit? Quae temporibus cupiditate ea est nemo porro sapiente exercitationem!' , cardColor: '#900C3F' }
   ];
 
   const techEvents = events.filter(event => event.id <= 4);
@@ -44,7 +44,7 @@ const Events = () => {
     <div className="events-wrapper">
       {/* <h1 className="main-heading">Upcoming Events</h1> */}
       <div className="event-section">
-        <h2 className="event-type-heading">Tech Events</h2>
+        <div className="eventpage2-head special-head"><h2 className="event-type-heading">Tech Events</h2></div>
         <div className="events-container">
           {techEvents.map((event) => (
             <EventCard key={event.id} {...event} uniqueId={`tech-event-${event.id}`} />
@@ -53,7 +53,7 @@ const Events = () => {
       </div>
 
       <div className="event-section">
-        <h2 className="event-type-heading">Non-Tech Events</h2>
+        <div className="eventpage2-head"><h2 className="event-type-heading">Non-Tech Events</h2></div>
         <div className="events-container">
           {nonTechEvents.map((event) => (
             <EventCard key={event.id} {...event} uniqueId={`non-tech-event-${event.id}`} />

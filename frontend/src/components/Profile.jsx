@@ -43,7 +43,6 @@ const Profile = () => {
       <div className="profile-container">
         <div className="profile-card">
           <div className="profile-icon-wrapper">
-            {/* Using Font Awesome icon for profile instead of image */}
             <i className="fas fa-user-circle profile-icon"></i>
           </div>
           <h2 className="profile-name">{data.name}</h2>
@@ -56,8 +55,8 @@ const Profile = () => {
               </div>
               <div className="info-data">
                 <span>{data.email}</span>
-                {/* <div className="info-underline"></div> */}
               </div>
+              <div className="info-divider" />
             </div>
             <div className="profile-info">
               <div className="info-label">
@@ -66,8 +65,8 @@ const Profile = () => {
               </div>
               <div className="info-data">
                 <span>{data.customId}</span>
-                {/* <div className="info-underline"></div> */}
               </div>
+              <div className="info-divider" />
             </div>
             <div className="profile-info">
               <div className="info-label">
@@ -76,8 +75,8 @@ const Profile = () => {
               </div>
               <div className="info-data">
                 <span>{data.department}</span>
-                {/* <div className="info-underline"></div> */}
               </div>
+              <div className="info-divider" />
             </div>
             <div className="profile-info">
               <div className="info-label">
@@ -86,8 +85,8 @@ const Profile = () => {
               </div>
               <div className="info-data">
                 <span>{data.collegeName}</span>
-                {/* <div className="info-underline"></div> */}
               </div>
+              <div className="info-divider" />
             </div>
             <div className="profile-info">
               <div className="info-label">
@@ -96,20 +95,22 @@ const Profile = () => {
               </div>
               <div className="info-data">
                 <span>{data.mobile}</span>
-                {/* <div className="info-underline"></div> */}
               </div>
+              <div className="info-divider" />
             </div>
             <h1 className="payment-payhead">Payment</h1>
             <div className="payment-proceed">
-              <Link to="/payment"><button>Proceed to pay</button></Link>
+              <Link to="/payment"><button className="custom-btn btn-11">Proceed to pay</button></Link>
             </div>
             <div className="profile-info">
               <div className="info-label">
+              <i className="fas fa-money-bill-wave"></i>
                 <label>Payment Status</label>
               </div>
               <div className="info-data">
-              <span>{data.paymentStatus ? "Verified" : "Not Verified"}</span>
+                <span>{data.paymentStatus ? "Verified" : "Not Verified"}</span>
               </div>
+              <div className="info-divider" />
             </div>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Header from './Header';
 import '../styles/payment.css';
-import gpay from '../assets/gpay.jpg';
+import gpay1 from '../assets/gpay1.jpg';
 
 const Payment = () => {
   const [copySuccess, setCopySuccess] = useState(false); // Boolean to control visibility
@@ -28,10 +28,14 @@ const Payment = () => {
         <Header />
         <div className="payment-info-container">
           <div className="gpay-div">
-            <img src={gpay} alt="GPay QR" className="gpay-img" />
-            <p>Scan the upi </p><span>or</span><p>Copy the upi id and make the payment</p>
+            <img src={gpay1} alt="GPay QR" className="gpay-img" />
+            <p className='payment-text'>Scan the upi </p><span className='payment-text'>or</span><p className='payment-text'>Copy the upi id and make the payment</p>
             <div className="upi-info">
               <p className="upi-id">devakumarv2234@oksbi</p>
+              <button className="copy-btn" onClick={handleCopy}>Copy UPI ID</button>
+            </div>
+            <div className="upi-info">
+              <p className="upi-id">raghulram2005@okicici</p>
               <button className="copy-btn" onClick={handleCopy}>Copy UPI ID</button>
             </div>
             <span className={`copy-success ${copySuccess ? 'visible' : ''}`}>UPI ID copied!</span>

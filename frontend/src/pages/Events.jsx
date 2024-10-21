@@ -19,7 +19,7 @@ const Events = () => {
 
     ScrollReveal().reveal('.parent', {
       origin: 'bottom',
-      distance: '50px',
+      distance: '40px',
       duration: 700,
       easing: 'ease-in-out',
       reset: true
@@ -27,14 +27,14 @@ const Events = () => {
   }, []);
 
   const events = [
-    { id: 1, icon: 'fa-code', heading: 'WEBSTRONUTS', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, quisquam fugit? Quae temporibus cupiditate ea est nemo porro sapiente exercitationem!' , cardColor: '#FF5733' },
-    { id: 2, icon: 'fa-laptop-code', heading: 'COSMO CODE', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, quisquam fugit? Quae temporibus cupiditate ea est nemo porro sapiente exercitationem!' , cardColor: '#33FF57' },
-    { id: 3, icon: 'fa-bullhorn', heading: 'GNIDOC', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, quisquam fugit? Quae temporibus cupiditate ea est nemo porro sapiente exercitationem!' , cardColor: '#3357FF' },
-    { id: 4, icon: 'fa-briefcase', heading: 'GALATIC HACKSPRINT', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, quisquam fugit? Quae temporibus cupiditate ea est nemo porro sapiente exercitationem!' , cardColor: '#FF33A8' },
-    { id: 5, icon: 'fa-palette', heading: 'PROMPT PARADOX', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, quisquam fugit? Quae temporibus cupiditate ea est nemo porro sapiente exercitationem!' , cardColor: '#FFC300' },
-    { id: 6, icon: 'fa-running', heading: 'UNIVERSAL HUNT', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, quisquam fugit? Quae temporibus cupiditate ea est nemo porro sapiente exercitationem!' , cardColor: '#DAF7A6' },
-    { id: 7, icon: 'fa-music', heading: 'GALATIC TALES', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, quisquam fugit? Quae temporibus cupiditate ea est nemo porro sapiente exercitationem!' , cardColor: '#C70039' },
-    { id: 8, icon: 'fas fa-question-circle', heading: 'QUIZSPAC', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, quisquam fugit? Quae temporibus cupiditate ea est nemo porro sapiente exercitationem!' , cardColor: '#900C3F' }
+    { id: 1, icon: 'fa-code', heading: 'WEBSTRONUTS', description: 'Create stunning websites in this hands-on competition. Let your creativity shine through design!' , cardColor: '#FF5733' },
+    { id: 2, icon: 'fa-laptop-code', heading: 'COSMO CODE', description: 'A fast-paced coding competition that tests programmers problem-solving skills and precision' , cardColor: '#33FF57' },
+    { id: 3, icon: 'fas fa-file-code', heading: 'GNIDOC', description: 'Decode the mystery! Reverse-engineer solutions and demonstrate your analytical prowess.' , cardColor: '#3357FF' },
+    { id: 4, icon: 'fas fa-lightbulb', heading: 'GALATIC HACKSPRINT', description: 'Present innovative solutions to real-world problems. Inspire and engage with your ideas!' , cardColor: '#FF33A8' },
+    { id: 5, icon: 'fas fa-robot', heading: 'PROMPT PARADOX', description: 'Generate prompts to match provided visuals in this creative challenge by using AI Tools!' , cardColor: '#FFC300' },
+    { id: 6, icon: 'fa-running', heading: 'UNIVERSAL HUNT', description: 'Embark on an exhilarating scavenger hunt. Solve clues and race to the finish!' , cardColor: '#DAF7A6' },
+    { id: 7, icon: 'fas fa-brain', heading: 'GALATIC TALES', description: 'Craft captivating stories using given words. Let your imagination run wild in this creative challenge!' , cardColor: '#C70039' },
+    { id: 8, icon: 'fas fa-question-circle', heading: 'QUIZSPAC', description: 'Test your knowledge in a fun, fast-paced quiz! Compete against peers for ultimate bragging rights.' , cardColor: '#900C3F' }
   ];
 
   const techEvents = events.filter(event => event.id <= 4);

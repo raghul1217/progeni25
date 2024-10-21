@@ -11,7 +11,7 @@ body {
 }
 
 .events-wrapper {
-  padding: 10px;
+  padding: 0px 30px;
   width: 100%;
 /* Ensure wrapper uses full width */
 }
@@ -20,7 +20,7 @@ body {
   text-align: center;
   font-size: 35px;
   color: white;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-transform: uppercase;
   animation: fadeInDown 1s ease-in-out;
 }
@@ -63,7 +63,7 @@ body {
 
 
 .event-section {
-  margin-bottom: 45px;
+  margin-bottom: 10px;
   width: 100%; /* Ensure full width of section */
 }
 
@@ -93,7 +93,7 @@ body {
   }
 
   .event-section{
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 
   .events-wrapper{
@@ -112,7 +112,7 @@ body {
 .parent {
   height: 400px;
   width: 100%; /* Ensure parent takes full width */
-  padding: 20px;
+  padding: 0px 20px;
   perspective: 1000px;
 }
 
@@ -124,6 +124,7 @@ body {
   background-position: center center;
   transition: all 0.5s ease-in-out;
   border-radius: 5px;
+  height: 320px;
 }
 
 .card:hover {
@@ -160,7 +161,7 @@ body {
 
 .card-content {
   padding-top: 15px;
-  font-size: 12px;
+  font-size: 14px;
   color: rgb(185, 185, 185);
   transition: all 0.5s ease-in-out;
   transform: translate3d(0px, 0px, 20px);

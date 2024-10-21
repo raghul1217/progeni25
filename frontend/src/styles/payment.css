@@ -1,20 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-.payment-navbar{
-    /* background: url(../assets/cover.png); */
-    background: linear-gradient(180deg, #111132, #0c0c1d);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed; /* This keeps the background fixed while scrolling */
-  min-height: 100vh;
+.payment-navbar {
+    position: relative; /* Required for absolute positioning of pseudo-element */
+    min-height: 100vh;
+    overflow: hidden; /* Prevents overflow from pseudo-element */
 }
 
-.payment-info-container{
+/* Pseudo-element for background image */
+.payment-navbar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../assets/planet-04.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    opacity: 0.2; /* Adjust opacity as needed (0 to 1) */
+    z-index: 0; /* Places it behind other content */
+}
+
+/* Ensures content is above the background image */
+.payment-info-container {
+    position: relative; /* This will allow stacking context above the pseudo-element */
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 100px;
+    z-index: 1; /* Places it above the background image */
 }
+
+/* Other styles remain unchanged */
+
 
 .gpay-div{
     display: flex;
@@ -25,8 +44,8 @@
 }
 
 .gpay-img{
-    width: 350px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     margin-bottom: 20px;
 }
 
@@ -139,13 +158,18 @@
     font-family: 'lexend', 'sans-serif';
   }
 
+  .payment-text{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+  }
+
 
 /*responsive design*/
 @media(max-width: 768px){
 
     .gpay-img{
         width: 250px;
-        height: 300px;
+        height: 250px;
     }
 
     .payment-info-container{

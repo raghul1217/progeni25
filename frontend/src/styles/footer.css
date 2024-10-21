@@ -1,146 +1,151 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
+/* General footer styles */
 .footer {
-  background: linear-gradient(180deg, #111132, #0c0c1d);
-  padding: 30px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 20px 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .footer-content {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  flex-wrap: wrap; /* For responsiveness */
-  width: 100%;
-  max-width: 1200px;
+  padding: 20px;
 }
 
-.left-side,
-.center-section,
-.right-side {
-  margin: 20px;
+/* Three columns for desktop */
+.left-side, .center-section, .right-side {
   flex: 1;
-  min-width: 250px;
+  padding: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.left-side{
-  width: 100%;
-}
-
-
-
-.contact-image-container p {
-  color: white;
-  font-family: 'Montserrat', sans-serif;
-  width: 100%;
-  margin-top: 20px;
-}
-
-.center-section h4,
-.right-side h4 {
-  color: white;
-  margin-bottom: 15px;
-  font-size: 24px;
+/* Linear gradient border-bottom for Contact Us and Quick Links */
+.left-side h4, .center-section h4 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
   position: relative;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.center-section h4::after,
-.right-side h4::after {
+.left-side h4::after, .center-section h4::after {
   content: '';
-  width: 50px;
-  height: 3px;
-  background-color: #fff;
   display: block;
-  margin: 10px auto 0 auto;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(270deg, rgb(238, 0, 255) 0%, rgb(165, 0, 255) 100%);
+  position: absolute;
+  bottom: -5px;
+  left: 0;
 }
 
+/* Contact numbers and social icons */
+.contact-numbers p{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 7px;
+  text-align: left;
+  align-items: left;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: #fff;
+  margin-right: 15px;
+  font-size: 1.2em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Quick Links styles */
 .center-section ul {
   list-style: none;
   padding: 0;
 }
 
 .center-section ul li {
-  margin: 10px 0;
+  margin: 8px 0;
 }
 
 .center-section ul li a {
+  color: #fff;
   text-decoration: none;
-  color: white;
-  font-size: 16px;
+  transition: color 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .center-section ul li a:hover {
-  color: #0073e6; /* Change color on hover */
+  color: #eb12eb;
 }
 
-.contact-numbers p {
-  margin: 5px 0;
-  font-size: 16px;
-  color: white;
-}
-
-.social-icons {
+/* Contact Image and Map */
+.contact-image-container{
   display: flex;
   justify-content: center;
-  gap: 15px;
-  margin-top: 10px;
+  align-items: center;
+  flex-direction: column;
 }
-
-.social-icons a {
-  color: white;
-  font-size: 24px;
-  transition: color 0.3s;
-}
-
-.social-icons a:hover {
-  color: #0073e6; /* Change color on hover */
-}
-
-.footer-bottom {
-  width: 100%;
+.contact-image-container p{
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
-  margin-top: 30px;
-  color: white;
+  width: 90%;
+  margin-bottom: 10px;
+}
+
+.location-icon {
+  margin-right: 10px;
+  color: #dd10dd;
+  font-size: 18px;
+}
+
+/* Footer bottom */
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer-p{
+  font-family: 'Montserrat', sans-serif;
 }
 
 .footer-bottom hr {
   border: none;
-  border-top: 1px solid #555;
+  height: 1px;
+  background-color: #444;
   margin-bottom: 10px;
 }
 
-.footer-bottom p {
-  margin-top: 10px;
-  font-size: 14px;
+.footer-gmap{
+  border: 4px solid rgb(234, 234, 234);
+  border-radius: 2px;
 }
 
-/* Responsive Design */
+/* Responsive design */
 @media (max-width: 768px) {
   .footer-content {
     flex-direction: column;
+    display: flex;
+    justify-content: center;
     align-items: center;
   }
 
-  .left-side,
-  .center-section,
-  .right-side {
-    margin: 10px 0;
+  .left-side, .center-section, .right-side {
+    padding: 10px 0;
   }
 
-  .contact-image {
-    width: 250px;
-    height: 200px;
+  .footer-gmap{
+    width: 300px;
+    height: 150px;
   }
+
 }

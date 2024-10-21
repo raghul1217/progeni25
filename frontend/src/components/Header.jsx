@@ -26,12 +26,12 @@ function Header() {
                     <ul className={`nav-links ${menuOpen ? 'active' : ''}`}>
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/events">Events</Link></li>
-                        <li><Link to="/rules">Rules</Link></li>
+                        {/* <li><Link to="/rules">Rules</Link></li> */}
                         <li><Link to="/profile">Profile</Link></li>
-                        <li><Link to="/contact">Contact</Link></li>
                         <li><Link to="/login">Login</Link></li>
                         <li><Link to="/register">Register</Link></li>
                         <li><Link to="/payment">Payment</Link></li>
+                        <li><Link to="/contact">Contact</Link></li>
                         <li><button className="custom-btn btn-11" onClick={handleLogout}><span className='logout-span'>Logout</span></button></li>
                     </ul>
                 </nav>

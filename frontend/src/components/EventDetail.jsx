@@ -405,7 +405,10 @@ const EventDetail = () => {
               <ul className="rounds-list">
                 {event.rounds.map((round, index) => (
                   <li key={index} className="round-item">
-                    <span className="rule-subheading">{round.title}:</span> {round.description}
+                    <div className="btn-arrow">
+                    <span className="rule-subheading">{round.title}</span>
+                    <span className="rule-description">{round.description}</span>
+                    </div>
                   </li>
                 ))}
               </ul>
@@ -420,8 +423,10 @@ const EventDetail = () => {
               <ul className="event-rules">
                 {event.rules.map((rule, index) => (
                   <li key={index}>
+                    <div className="btn-arrow">
                     <span className="rule-subheading">{rule.subheading}</span>
                     <span className="rule-description">{rule.description}</span>
+                    </div>
                   </li>
                 ))}
               </ul>

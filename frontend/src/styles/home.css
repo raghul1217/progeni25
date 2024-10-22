@@ -34,6 +34,27 @@
     font-weight: 900;
 }
 
+/* Reduced Text Glow */
+.brand-main {
+    font-family: 'AlphaCentauri', sans-serif;
+    font-size: 55px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.5);
+  }
+  
+  /* Reduced Glow for the Number */
+/* Simple Brightness Effect */
+.brand-main .number { /* Purple-pink color */
+    font-size: 47px;
+    font-weight: bold;
+    font-family: "montserrat", sans-serif;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.5);
+  }
+  
+  
+
 .home-container .home-content1 img {
     width: 150px;
     height: 160px;
@@ -139,15 +160,16 @@ font-family: "space mono", sans-serif;
     border: 2px solid rgba(255, 255, 255, 0.7);
     outline: none;
     border-radius: 5px;
-    padding: 12px 40px;
+    padding: 7px 25px;
     position: relative;
-    font-size: 18px;
+    font-size: 25px;
+    font-weight: 900;
     cursor: pointer;
     overflow: hidden;
     transition: all 0.3s ease-in-out;
     z-index: 1;
     color: white;
-    background: linear-gradient(0deg, rgb(106, 2, 116) 0%, rgb(101, 4, 125) 100%);
+    background: linear-gradient(0deg, rgb(226, 5, 246) 0%, rgb(175, 0, 219) 100%);
     box-shadow: 0 0 30px rgba(255, 255, 255, 0.4), 0 0 50px rgba(255, 255, 255, 0.4);
 }
 
@@ -207,7 +229,6 @@ font-family: "space mono", sans-serif;
     font-family: 'AlphaCentauri', 'lexend', 'sans-serif';
     text-decoration: none;
     font-weight: 900;
-    font-size: 20px;
 }
 
 
@@ -257,6 +278,14 @@ font-family: "space mono", sans-serif;
         font-size: 20px;
     }
 
+    .brand-main{
+        font-size: 55px;
+    }
+
+    .brand-main .number{
+        font-size: 30px;
+    }
+
     .home-btn {
         display: flex;
         flex-direction: column;
@@ -267,9 +296,13 @@ font-family: "space mono", sans-serif;
         width: 100%;
     }
 
-    .home-btn p {
-        text-align: center;
+    .register-btn{
+        border-radius: 3px;
+        padding: 5px 20px;
+        font-size: 20px;
+        font-weight: 700;
     }
+
 
     .home-content2 {
         padding: 10px;
@@ -282,11 +315,7 @@ font-family: "space mono", sans-serif;
         height: 250px;
     }
 
-    .register-btn a{
-        width: 80%;
-        align-items: center;
-        font-family: "Lexend", sans-serif;
-    }
+    
 
     .home-date-container{
         display: flex;
@@ -297,6 +326,6 @@ font-family: "space mono", sans-serif;
     }
 
     .home-date{
-        font-size: 24px;
+        font-size: 22px;
     }
 }

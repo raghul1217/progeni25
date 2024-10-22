@@ -27,13 +27,13 @@ const Events = () => {
   }, []);
 
   const events = [
-    { id: 1, icon: 'fa-code', heading: 'WEBSTRONUTS', description: 'Create stunning websites in this hands-on competition. Let your creativity shine through design!' , cardColor: '#FF5733' },
+    { id: 1, icon: 'fa-code', heading: 'WEBSTRONAUTS', description: 'Create stunning websites in this hands-on competition. Let your creativity shine through design!' , cardColor: '#FF5733' },
     { id: 2, icon: 'fa-laptop-code', heading: 'COSMO CODE', description: 'A fast-paced coding competition that tests programmers problem-solving skills and precision' , cardColor: '#33FF57' },
     { id: 3, icon: 'fas fa-file-code', heading: 'GNIDOC', description: 'Decode the mystery! Reverse-engineer solutions and demonstrate your analytical prowess.' , cardColor: '#3357FF' },
-    { id: 4, icon: 'fas fa-lightbulb', heading: 'GALATIC HACKSPRINT', description: 'Present innovative solutions to real-world problems. Inspire and engage with your ideas!' , cardColor: '#FF33A8' },
+    { id: 4, icon: 'fas fa-lightbulb', heading: 'GALACTIC HACKSPRINT', description: 'Present innovative solutions to real-world problems. Inspire and engage with your ideas!' , cardColor: '#FF33A8' },
     { id: 5, icon: 'fas fa-robot', heading: 'PROMPT PARADOX', description: 'Generate prompts to match provided visuals in this creative challenge by using AI Tools!' , cardColor: '#FFC300' },
     { id: 6, icon: 'fa-running', heading: 'UNIVERSAL HUNT', description: 'Embark on an exhilarating scavenger hunt. Solve clues and race to the finish!' , cardColor: '#DAF7A6' },
-    { id: 7, icon: 'fas fa-brain', heading: 'GALATIC TALES', description: 'Craft captivating stories using given words. Let your imagination run wild in this creative challenge!' , cardColor: '#C70039' },
+    { id: 7, icon: 'fas fa-brain', heading: 'GALACTIC TALES', description: 'Craft captivating stories using given words. Let your imagination run wild in this creative challenge!' , cardColor: '#C70039' },
     { id: 8, icon: 'fas fa-question-circle', heading: 'QUIZSPAC', description: 'Test your knowledge in a fun, fast-paced quiz! Compete against peers for ultimate bragging rights.' , cardColor: '#900C3F' }
   ];
 

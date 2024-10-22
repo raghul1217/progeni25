@@ -55,16 +55,46 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+.people-contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.people-contact i{
+  font-size: 15px;
+  margin-top: 3px;
+}
+
 .social-icons {
   margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons-div{
+  background: #dd10dd;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .social-icons a {
   color: #fff;
-  margin-right: 15px;
-  font-size: 1.2em;
+  font-size: 20px;
+  font-weight: 600;
   font-family: 'Montserrat', sans-serif;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 
 /* Quick Links styles */
 .center-section ul {
@@ -130,8 +160,8 @@
 }
 
 .footer-gmap{
-  border: 4px solid rgb(234, 234, 234);
-  border-radius: 2px;
+  border: 2px solid #C0C0C0;
+  border-radius: 1px;
 }
 
 /* Responsive design */
@@ -147,14 +177,22 @@
     padding: 10px 0;
   }
 
+  .social-icons{
+    margin-bottom: 15px;
+  }
+
   .footer-gmap{
-    width: 280px;
+    width: 290px;
     height: 150px;
   }
 
   .contact-image-container p{
     width: 95%;
     font-size: 16px;
+  }
+
+  .center-section{
+    margin-bottom: 5px;
   }
 
   .footer-p{

@@ -14,11 +14,11 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: url(../assets/planet-04.png);
+    background: url(../assets/cover1.png);
     background-position: center;
     background-size: cover;
     background-attachment: fixed; /* Keeps the background fixed while scrolling */
-    opacity: 0.2; /* Adjust opacity as needed (0 to 1) */
+    opacity: 0.5; /* Adjust opacity as needed (0 to 1) */
     z-index: 0; /* Places it behind other content */
 }
 
@@ -41,6 +41,29 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.gpay-div-head {
+    font-size: 28px;
+    font-weight: 600;
+    font-family: 'Montserrat', 'sans-serif';
+    margin-bottom: 16px;
+}
+
+.gpay-div-head {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px; 
+  }
+  
+.gpay-div-head::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3.5px; 
+    background: linear-gradient(270deg, rgb(238, 0, 255) 0%, rgb(165, 0, 255) 100%);
 }
 
 .gpay-img{
@@ -88,6 +111,22 @@
   .copy-success.visible {
     visibility: visible;
   }
+
+/* amount details */
+.amount-details{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.amount-details h1{
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'Montserrat', 'sans-serif';
+}
   
 
 /*payment verification div*/
@@ -97,8 +136,8 @@
     flex: 1;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin-bottom: 150px;
+    align-items: left;
+    display: block;
 }
 
 .verify-div{
@@ -111,7 +150,7 @@
 .verify-div h1{
     font-size: 25px;
     font-weight: 600;
-    font-family: 'lexend', 'sans-serif';
+    font-family: 'Montserrat', 'sans-serif';
     text-align: left;
     display: flex;
     border-bottom: 3px solid white;
@@ -120,13 +159,13 @@
 
 .payment-verification-p1 {
     font-size: 20px;
-    font-family: 'lexend', 'sans-serif';
+    font-family: 'Montserrat', 'sans-serif';
     margin-bottom: 5px;
 }
 
 .payment-verification-p2{
     font-size: 20px;
-    font-family: 'lexend', 'sans-serif';
+    font-family: 'Montserrat', 'sans-serif';
 }
 
 .verify-btn{
@@ -155,7 +194,7 @@
 
   .gpay-div{
     font-size: 16px;
-    font-family: 'lexend', 'sans-serif';
+    font-family: 'Montserrat', 'sans-serif';
   }
 
   .payment-text{
@@ -167,9 +206,13 @@
 /*responsive design*/
 @media(max-width: 768px){
 
+    .amount-details h1{
+        font-size: 18px;
+    }
+
     .gpay-img{
-        width: 250px;
-        height: 250px;
+        width: 230px;
+        height: 230px;
     }
 
     .payment-info-container{

@@ -60,16 +60,33 @@
 .nav-links li a {
     color: white;
     text-decoration: none;
-    padding: 8px 12px;
+    padding: 8px 8px;
     font-weight: 500;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    position: relative; /* Needed for the pseudo-element positioning */
+    transition: color 0.3s ease; /* Smooth color transition */
     font-family: 'Montserrat', sans-serif;
 }
 
-.nav-links li a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+.nav-links li a::after {
+    content: '';
+    position: absolute;
+    left: 50%; /* Start the animation from the center */
+    bottom: 0;
+    width: 0;
+    height: 2.5px;
+    background: linear-gradient(270deg, rgb(238, 0, 255) 0%, rgb(165, 0, 255) 100%);
+    transition: width 0.4s ease, left 0.4s ease; /* Animate both width and position */
 }
+
+.nav-links li a:hover {
+    color: white; /* Optional: keep the text color the same */
+}
+
+.nav-links li a:hover::after {
+    width: 80%; /* Make the border width smaller than full */
+    left: 10%; /* Adjust to center the shorter border */
+}
+
 
 /* Responsive Menu Icon (Hamburger) */
 .menu-icon {

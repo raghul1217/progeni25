@@ -41,7 +41,13 @@ const Payment = () => {
             <span className={`copy-success ${copySuccess ? 'visible' : ''}`}>UPI ID copied!</span>
           </div>
           <div className="payment-verification">
-            <div className='verify-div'><h1>Note:</h1></div>
+          <h1 className='gpay-div-head'>Payment</h1>
+            <div className="amount-details">
+              <h1>Online registration fee: ₹200/-</h1>
+              <h1>Onspot registration fee: ₹250/-</h1>
+              {/* <h1>Cash prizes available for each events</h1> */}
+            </div>
+            <h1 className='gpay-div-head'>Note:</h1>
             <p className='payment-verification-p1'>1.After completing payment, kindly fill out the Google form for payment verification by the backend team.</p>
             <p className='payment-verification-p2'>2.Please enter your name, progen ID, college, mobile number from which the payment was made, and upload your transaction screenshot.</p>
             <div className="verify-btn"><button className="google-form-btn" onClick={handlePaymentClick}>Google Form</button></div>

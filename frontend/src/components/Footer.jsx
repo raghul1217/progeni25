@@ -15,36 +15,37 @@ const Footer = () => {
         <h4>Contact Us</h4>
           <div className="contact-numbers">
             <div className="people-contact">
-              {/* insertphone icon */}
-              <p>Jegan K - GS +123 456 7890</p>
+              <i class="fas fa-phone"></i>
+              <p>Jegan K - GS : 8220634803</p>
+            </div>
+
+            <div className="people-contact">
+              <i class="fas fa-phone"></i>
+              <p>Megha Harthana S - GS : 6381931373</p>
             </div>
             
             <div className="people-contact">
-              {/* insertphone icon */}
-              <p>Devakumar V - OC +123 456 7890</p>
-            </div>
-
-            <div className="people-contact">
-              {/* insertphone icon */}
-              <p>Nadishbalaji - OC +123 456 7890</p>
-            </div>
-
-            <div className="people-contact">
-              {/* insertphone icon */}
-              <p>Vinothkumar J - OC +123 456 7890</p>
+              <i class="fas fa-phone"></i>
+              <p>Devakumar V - OC : 9025635039</p>
             </div>
           </div>
 
           <div className="social-icons">
+            <div className="social-icons-div">
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faInstagram} />
+              <FontAwesomeIcon icon={faInstagram}/>
             </a>
-            <a href="https://whatsapp.com" target="_blank" rel="noopener noreferrer">
+            </div>
+            <div className="social-icons-div">
+            <a href="https://wa.me/918220634803" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faWhatsapp} />
             </a>
+            </div>
+            <div className="social-icons-div">
             <a href="mailto:someone@example.com">
               <FontAwesomeIcon icon={faEnvelope} />
             </a>
+            </div>
           </div>
         </div>
 

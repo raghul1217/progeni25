@@ -29,7 +29,7 @@ const Events = () => {
   const events = [
     { id: 1, icon: 'fa-code', heading: 'WEBSTRONAUTS', description: 'Create stunning websites in this hands-on competition. Let your creativity shine through design!' , cardColor: '#FF5733' },
     { id: 2, icon: 'fa-laptop-code', heading: 'COSMO CODE', description: 'A fast-paced coding competition that tests programmers problem-solving skills and precision' , cardColor: '#33FF57' },
-    { id: 3, icon: 'fas fa-file-code', heading: 'GNIDOC', description: 'Decode the mystery! Reverse-engineer solutions and demonstrate your analytical prowess.' , cardColor: '#3357FF' },
+    { id: 3, icon: 'fas fa-file-code', heading: 'GNIDOC', description: 'Decode the mystery! Reverse-engineer solutions, demonstrate your analytical prowess.' , cardColor: '#3357FF' },
     { id: 4, icon: 'fas fa-lightbulb', heading: 'GALACTIC HACKSPRINT', description: 'Present innovative solutions to real-world problems. Inspire and engage with your ideas!' , cardColor: '#FF33A8' },
     { id: 5, icon: 'fas fa-robot', heading: 'PROMPT PARADOX', description: 'Generate prompts to match provided visuals in this creative challenge by using AI Tools!' , cardColor: '#FFC300' },
     { id: 6, icon: 'fa-running', heading: 'UNIVERSAL HUNT', description: 'Embark on an exhilarating scavenger hunt. Solve clues and race to the finish!' , cardColor: '#DAF7A6' },
@@ -41,7 +41,7 @@ const Events = () => {
   const nonTechEvents = events.filter(event => event.id > 4);
 
   return (
-    <div className="events-wrapper">
+    <div className="events-wrapper" id='events'>
       {/* <h1 className="main-heading">Upcoming Events</h1> */}
       <div className="event-section">
         <div className="eventpage2-head special-head"><h2 className="event-type-heading">Tech Events</h2></div>

@@ -24,6 +24,10 @@
   flex-direction: column;
 }
 
+.left-side{
+  gap: 15px;
+}
+
 /* Linear gradient border-bottom for Contact Us and Quick Links */
 .left-side h4, .center-section h4 {
   font-size: 1.5em;
@@ -70,7 +74,7 @@
 .social-icons {
   margin-top: 10px;
   display: flex;
-  gap: 10px;
+  gap: 15px;
 }
 
 .social-icons-div{

@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer" id='footer'>
       <div className="footer-content">
 
         {/* left Side: Contact Numbers and Icons */}

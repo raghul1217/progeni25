@@ -89,7 +89,7 @@ body {
 
   #card-t {
     font-family: 'AlphaCentauri';
-    font-size: 18px;
+    font-size: 19px;
   }
 
   .event-section{
@@ -100,6 +100,11 @@ body {
     padding: 20px;
     padding: 0px 40px;
   }
+
+  .parent{
+    height: 400px;
+  }
+
 }
 
 /* For Desktops: 4 cards per row */
@@ -110,9 +115,9 @@ body {
 }
 
 .parent {
-  height: 400px;
+  height: 420px;
   width: 100%; /* Ensure parent takes full width */
-  padding: 0px 20px;
+  padding: 0px 16px;
   perspective: 1000px;
 }
 
@@ -149,7 +154,7 @@ body {
 
 .card-title {
   color: white;
-  font-size: 25px;
+  font-size: 18px;
   font-weight: 800;
   transition: all 0.5s ease-in-out;
   transform: translate3d(0px, 0px, 20px);

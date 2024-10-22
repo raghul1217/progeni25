@@ -178,6 +178,62 @@ button {
     100% { transform: scale(50) rotate(45deg); opacity: 0; }
 }
 
+/* notification message */
+/* notification message */
+.notification-container {
+    position: fixed;
+    top: 80px; /* Adjust this as needed for top spacing */
+    right: 20px; /* Pushes the notification to the right */
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-end; /* Aligns content to the right */
+    align-items: flex-start; /* Aligns the content to the top */
+}
+
+.notification {
+    background-color: hsla(0, 0%, 100%, 0.1); /* Transparent red background */
+    border-left: 3px solid #e600ff;
+    padding: 14px;
+    width: 350px;
+    border-radius: 3px;
+    backdrop-filter: blur(50px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.notification-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.notification p {
+    margin: 0;
+    font-size: 14px;
+    color: white;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 500;
+}
+
+.profile-link {
+    color: #c306d7;
+    text-decoration: underline;
+    display: inline-block;
+    margin-top: 5px;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.profile-link:hover {
+    color: #e600ff;
+}
+
+
 
 /* Mobile view styles */
 @media (max-width: 767px) {
@@ -206,6 +262,23 @@ button {
 
     .menu-icon {
         display: block;
+    }
+
+    .notification-container{
+        right: 5px;
+        top: 100px; 
+    }
+
+    .notification{
+        padding: 10px;
+        width: 300px;
+        border-radius: 2px;
+    }
+
+    .notification-close-btn{
+        top: 12px;
+        right: 5px;
+        font-size: 18px;
     }
 }
 

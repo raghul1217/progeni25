@@ -32,7 +32,7 @@ const Footer = () => {
 
           <div className="social-icons">
             <div className="social-icons-div">
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/progeni25/profilecard/?igsh=d280emlncG82eXN3" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faInstagram}/>
             </a>
             </div>

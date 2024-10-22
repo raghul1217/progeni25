@@ -196,7 +196,7 @@ const EventDetail = () => {
         {
           subheading: "PPT Submission:",
           description:
-            "Selected teams must submit a detailed PPT explaining their idea, including the implementation plan, technology stack, and expected outcomes, to the same email address (hacksprint.gce@gmail.com).",
+            "Selected teams must submit a detailed PPT explaining their idea, including the implementation plan, technology stack, and expected outcomes, to the same email address (hacksprint.gcesalem@gmail.com).",
         },
       ],
       guidelines: [

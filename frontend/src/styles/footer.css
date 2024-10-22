@@ -74,7 +74,7 @@
 }
 
 .social-icons-div{
-  background: #dd10dd;
+  background: linear-gradient(270deg, rgb(238, 0, 255) 0%, rgb(165, 0, 255) 100%);
   border-radius: 50%;
   width: 32px;
   height: 32px;

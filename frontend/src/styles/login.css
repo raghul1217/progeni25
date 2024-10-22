@@ -1,5 +1,6 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300..900&display=swap');
 /*=============== VARIABLES CSS ===============*/
 :root {
   /*========== Colors ==========*/
@@ -27,7 +28,7 @@ body,
 input,
 button {
   font-size: var(--normal-font-size);
-  font-family: var(--body-font);
+  font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -52,7 +53,7 @@ img {
 /*=============== LOGIN ===============*/
 
 .login-navbar{
-  background: url(../assets/planet-01.png);
+  background: url(../assets/cover1.png);
   background-position: center;
   background-size: cover;
 }
@@ -80,6 +81,7 @@ img {
 }
 .login__title {
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
   font-size: var(--h1-font-size);
   font-weight: var(--font-medium);
   margin-bottom: 2rem;
@@ -137,6 +139,7 @@ input:-moz-autofill {
   top: 13px;
   font-weight: var(--font-medium);
   transition: top 0.3s, font-size 0.3s;
+  font-family: 'Montserrat', sans-serif;
 }
 .login__eye {
   position: absolute;
@@ -156,8 +159,12 @@ input:-moz-autofill {
 .login__check {
   margin-bottom: 1.5rem;
 }
-.login__check-label, .login__forgot, .login__register {
+.login__check-label, .login__forgot {
   font-size: var(--small-font-size);
+  font-family: 'Montserrat', sans-serif;
+}
+.login__register{
+  font-size: 16px;
 }
 .login__check-group {
   column-gap: 0.5rem;
@@ -177,13 +184,15 @@ input:-moz-autofill {
   padding: 10px 15px;
   border-radius: 0.5rem;
   background-color: var(--white-color);
-  font-weight: var(--font-medium);
+  font-weight: 500;
   cursor: pointer;
   margin-bottom: 2rem;
   color: black;
+  font-family: 'Montserrat', sans-serif;
 }
 .login__register {
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
 }
 .login__register a {
   color: var(--white-color);
@@ -203,6 +212,13 @@ input:-moz-autofill {
 .login__input:not(:placeholder-shown).login__input:not(:focus) + .login__label {
   top: -12px;
   font-size: var(--small-font-size);
+}
+.login-btn-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 10px;
 }
 
 /*=============== BREAKPOINTS ===============*/

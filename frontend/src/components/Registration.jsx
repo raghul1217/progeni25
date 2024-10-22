@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link,useNavigate } from 'react-router-dom'; 
 import axios from 'axios';
 import { toast, ToastContainer } from 'react-toastify';
 import { FaUser, FaEnvelope, FaLock, FaUniversity, FaPhone, FaBuilding } from 'react-icons/fa';
@@ -14,6 +15,7 @@ function Registration() {
     const [collegeName, setCollegeName] = useState('');
     const [mobile, setMobile] = useState('');
     const [loading, setLoading] = useState(false);
+    const navigate = useNavigate();
 
     const handleSubmit = (e) => {
         setLoading(true);
@@ -32,6 +34,11 @@ function Registration() {
             .then((res) => {
                 setLoading(false);
                 toast.success("Registration Successful", { className: 'toastify-container' });
+
+                 // Redirect to login page after 2 seconds
+                 setTimeout(() => {
+                    navigate('/login'); // Redirect to login
+                }, 2000); // Delay to show the success message
             })
             .catch((err) => {
                 toast.error("Registration Failed", { className: 'toastify-container' });
@@ -142,13 +149,19 @@ function Registration() {
                             </div>
                         </div>
 
+                        <div className="login-btn-center">
                         <button
                             disabled={loading}
                             type="submit"
-                            className="registration-button"
+                            className="custom-btn-pay btn-11"
                         >
                             {loading ? 'Submitting...' : 'Register'}
                         </button>
+                        </div>
+
+                        <p className="login__register">
+                            Already have an account? <Link to="/login">login</Link>
+                        </p>
                     </form>
                     <ToastContainer />
                 </div>

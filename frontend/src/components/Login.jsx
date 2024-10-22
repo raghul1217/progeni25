@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { FaUser, FaLock, FaEyeSlash, FaEye } from 'react-icons/fa'; // Importing FontAwesome icons
 import '../styles/login.css'; // Importing the external CSS
@@ -90,12 +90,14 @@ const Login = () => {
                     </div>
                 </div>
 
-                <button type="submit" disabled={loading} className="login__button">
+                <div className="login-btn-center">
+                <button type="submit" disabled={loading} className="custom-btn-pay btn-11">
                     {loading ? 'Submitting..' : 'Login'}
                 </button>
+                </div>
 
                 <p className="login__register">
-                    Don't have an account? <a href="#">Register</a>
+                    Don't have an account? <Link to="/register">Register</Link>
                 </p>
             </form>
         </div>

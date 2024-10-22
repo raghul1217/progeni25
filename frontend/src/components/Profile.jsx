@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import Header from "./Header";
 import "../styles/profile.css";
 import { Link } from "react-router-dom";
+import { FaCheckCircle, FaExclamationCircle, FaEnvelope, FaIdCard, FaBuilding, FaUniversity, FaPhone, FaMoneyBillWave } from "react-icons/fa";
 
 const Profile = () => {
   const [loading, setLoading] = useState(true);
@@ -47,10 +48,10 @@ const Profile = () => {
           </div>
           <h2 className="profile-name">{data.name}</h2>
           <div className="profile-info-container">
-            <h1>Bio</h1>
+            <div className="profile-bio-div"><h1 className="profile-bio">Bio</h1></div>
             <div className="profile-info">
               <div className="info-label">
-                <i className="fas fa-envelope"></i>
+                <FaEnvelope />
                 <label>Email</label>
               </div>
               <div className="info-data">
@@ -60,7 +61,7 @@ const Profile = () => {
             </div>
             <div className="profile-info">
               <div className="info-label">
-                <i className="fas fa-id-card"></i>
+                <FaIdCard />
                 <label>User ID</label>
               </div>
               <div className="info-data">
@@ -70,7 +71,7 @@ const Profile = () => {
             </div>
             <div className="profile-info">
               <div className="info-label">
-                <i className="fas fa-building"></i>
+                <FaBuilding />
                 <label>Dept</label>
               </div>
               <div className="info-data">
@@ -80,7 +81,7 @@ const Profile = () => {
             </div>
             <div className="profile-info">
               <div className="info-label">
-                <i className="fas fa-university"></i>
+                <FaUniversity />
                 <label>College</label>
               </div>
               <div className="info-data">
@@ -90,7 +91,7 @@ const Profile = () => {
             </div>
             <div className="profile-info">
               <div className="info-label">
-                <i className="fas fa-phone"></i>
+                <FaPhone />
                 <label>Mobile</label>
               </div>
               <div className="info-data">
@@ -98,17 +99,32 @@ const Profile = () => {
               </div>
               <div className="info-divider" />
             </div>
-            <h1 className="payment-payhead">Payment</h1>
-            <div className="payment-proceed">
-              <Link to="/payment"><button className="custom-btn btn-11">Proceed to pay</button></Link>
-            </div>
+
+            <div className="profile-bio-div"><h1 className="payment-payhead profile-bio ">Payment</h1></div>
+
+            {/* Conditionally render the "Proceed to pay" button only if payment is not verified */}
+            {!data.paymentStatus && (
+              <div className="payment-proceed">
+                <Link to="/payment">
+                  <button className="custom-btn-pay btn-11">Proceed to pay</button>
+                </Link>
+              </div>
+            )}
+
             <div className="profile-info">
               <div className="info-label">
-              <i className="fas fa-money-bill-wave"></i>
+                {/* <FaMoneyBillWave /> */}
                 <label>Payment Status</label>
               </div>
-              <div className="info-data">
+              <div className="info-data payment-status">
+                {/* Change icon and color based on payment status */}
                 <span>{data.paymentStatus ? "Verified" : "Not Verified"}</span>
+                {data.paymentStatus ? (
+                  <FaCheckCircle className="verified-icon" style={{ color: '#28a745' }} />
+                ) : (
+                  <FaExclamationCircle className="verified-icon" style={{ color: 'yellow' }} />
+                )}
+                
               </div>
               <div className="info-divider" />
             </div>

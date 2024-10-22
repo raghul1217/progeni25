@@ -7,7 +7,7 @@ body {
 }
 
 .profile-navbar {
-  background: url(../assets/cover.png);
+  background: url(../assets/cover1.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -23,6 +23,7 @@ body {
   padding: 40px 20px;
   min-height: 100vh;
   margin-top: 70px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* Glassmorphism Profile Card */
@@ -30,8 +31,8 @@ body {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(40px);
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(25px);
+  border: 2px solid rgba(255, 255, 255, 0.6);
   width: 100%;
   max-width: 450px;
   padding: 30px;
@@ -39,7 +40,7 @@ body {
 }
 
 .profile-icon-wrapper {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .profile-info i {
@@ -51,6 +52,7 @@ body {
   color: #fff;
   font-weight: 600;
   margin-bottom: 15px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .profile-info-container h1 {
@@ -59,24 +61,32 @@ body {
   font-weight: 600;
   text-align: left;
   margin-bottom: 15px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .profile-info {
   margin-bottom: 15px;
   text-align: left;
   color: #fff;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .info-label {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #ddd;
   margin-bottom: 5px;
   display: block;
+  display: flex;
+  gap: 5px;
+  justify-content: left;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .info-data {
   font-size: 1.1rem;
   color: #fff;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* Divider */
@@ -92,12 +102,14 @@ body {
   font-weight: 600;
   text-align: left;
   margin: 25px 0 15px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .payment-proceed {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .payment-proceed button {
@@ -112,6 +124,7 @@ body {
   min-width: 130px; /* Set a minimum width to prevent wrapping */
   white-space: nowrap; /* Prevent text from wrapping to the next line */
   overflow: hidden; /* Hide any overflowing text */
+  font-family: 'Montserrat', sans-serif;
   text-overflow: ellipsis; /* Add ellipsis for overflow text */
 }
 
@@ -128,10 +141,18 @@ body {
   font-size: 1rem;
   color: #fff;
   margin-top: 10px;
+  display: flex;
+  gap: 5px;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.custom-btn {
-  width: 130px;
+.verified-icon{
+  margin-top: 5px;
+}
+
+
+.custom-btn-pay {
+  width: 150px;
   height: 40px;
   color: #fff;
   border-radius: 5px;
@@ -195,6 +216,30 @@ body {
   100% { transform: scale(50) rotate(45deg); opacity: 0; }
 }
 
+.profile-bio-div{
+  display: flex;
+  justify-content: left;
+}
+
+.profile-bio {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 3px; 
+  text-align: left;
+  align-items: left;
+  left: 0;
+}
+
+.profile-bio::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px; 
+  background: linear-gradient(270deg, rgb(238, 0, 255) 0%, rgb(165, 0, 255) 100%);
+}
+
 
 /* Responsive Styling */
 @media (max-width: 768px) {
@@ -207,7 +252,7 @@ body {
   }
 
   .info-label, .info-data {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .profile-icon {
@@ -216,12 +261,12 @@ body {
 
   .payment-proceed button {
     padding: 8px 15px;
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .payment-proceed button {
     padding: 8px 15px; /* Adjust padding for tablets */
-    font-size: 0.9rem; /* Adjust font size */
+    font-size: 1rem; /* Adjust font size */
   }
 }
 
@@ -239,7 +284,7 @@ body {
   }
 
   .info-label, .info-data {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   .profile-icon {
@@ -248,11 +293,11 @@ body {
 
   .payment-proceed button {
     padding: 6px 12px;
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   .payment-proceed button {
-    padding: 6px 12px; /* Adjust padding for mobile */
-    font-size: 0.8rem; /* Adjust font size */
+    padding: 6px 12px; 
+    font-size: 1rem; 
   }
 }

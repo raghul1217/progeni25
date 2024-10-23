@@ -131,7 +131,8 @@
 
 
 /* General Toastify styles for all devices */
-.toastify-container {
+.toastify-container,
+.Toastify__toast-container {
     font-family: Arial, sans-serif;
     font-size: 1rem;
     background-color: rgba(0, 0, 0, 0.9);
@@ -139,11 +140,15 @@
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    position: fixed !important; /* Ensure it's fixed */
+    top: 20px !important; /* Adjust to top-right */
+    right: 20px !important; /* Adjust to top-right */
+    z-index: 9999;
     width: 100%;
-    max-width: 350px; /* Reduced width for all devices */
-    margin: 40px auto 0 auto; /* Add space at the top */
+    max-width: 350px;
 }
 
+/* Success and error styles */
 .toastify-container .Toastify__toast--success {
     background-color: #28a745;
     color: #fff;
@@ -164,10 +169,12 @@
     .toastify-container {
         font-size: 0.9rem;
         padding: 0.75rem;
-        max-width: 280px; /* Smaller max-width for mobile */
+        max-width: 280px;
         border-radius: 6px;
+        top: 10px; /* Adjust for smaller screens */
+        right: 10px; /* Adjust for smaller screens */
     }
-
+    
     .toastify-container .Toastify__toast-body {
         font-size: 0.85rem;
     }
@@ -179,10 +186,12 @@
     .toastify-container {
         font-size: 0.8rem;
         padding: 0.6rem;
-        max-width: 240px; /* Smallest max-width for smaller devices */
+        max-width: 240px;
         border-radius: 5px;
+        top: 5px; /* Further adjust for very small screens */
+        right: 5px; /* Further adjust for very small screens */
     }
-
+    
     .toastify-container .Toastify__toast-body {
         font-size: 0.8rem;
     }

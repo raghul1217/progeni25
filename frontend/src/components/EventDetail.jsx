@@ -468,8 +468,9 @@ const EventDetail = () => {
             id="eventdetail-btn"
           >
             <Link to="/" id="event-btn-link">
-              Back to Events
+              Back to Home
             </Link>
+            
           </button>
         </div>
       </div>

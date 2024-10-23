@@ -73,10 +73,10 @@ const Home = () => {
             <img src={progenilogo} alt="progeni25-logo" />
             <h1 className='brand-main'>Progen'i <span className='number'>{number}.0</span></h1>
             <div className="home-date-container">
-              <h3 className='home-date'>Held on</h3>
-              <h3 className='home-date'>November-14 2024</h3>
+              <h3 className='home-date s-home-date'>Slated to happen on</h3>
+              <h3 className='home-date'>Nov-14 2024</h3>
             </div>
-            <p>A national level technical symposium conducted by Department of Computer science and Engineering, Government College of Engineering, Salem.</p>
+            <p>A national level technical symposium will be conducted by Department of Computer science and Engineering, Government College of Engineering, Salem.</p>
             <div className="home-btn">
               <Link to="/register" id='neon-btn'>
                 <button className='register-btn'>

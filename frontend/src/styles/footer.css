@@ -168,6 +168,22 @@
   border-radius: 1px;
 }
 
+.cdiv{
+  display: flex;
+}
+.cname{
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+.cno{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
   .footer-content {

@@ -29,7 +29,7 @@ const Payment = () => {
         <div className="payment-info-container">
           <div className="gpay-div">
             <img src={gpay1} alt="GPay QR" className="gpay-img" />
-            <p className='payment-text'>Scan the upi </p><span className='payment-text'>or</span><p className='payment-text'>Copy the upi id and make the payment</p>
+            <p className='payment-text'>Scan the UPI </p><span className='payment-text'>or</span><p className='payment-text'>Copy the UPI ID and complete the payment</p>
             <div className="upi-info">
               <p className="upi-id">devakumarv2234@oksbi</p>
               <button className="copy-btn" onClick={handleCopy}>Copy UPI ID</button>
@@ -48,8 +48,8 @@ const Payment = () => {
               {/* <h1>Cash prizes available for each events</h1> */}
             </div>
             <h1 className='gpay-div-head'>Note:</h1>
-            <p className='payment-verification-p1'>1.After completing payment, kindly fill out the Google form for payment verification by the backend team.</p>
-            <p className='payment-verification-p2'>2.Please enter your name, progen ID, college, mobile number from which the payment was made, and upload your transaction screenshot.</p>
+            <p className='payment-verification-p1'>1.After completing the payment, kindly fill out the Google form which has been given below to verify your payment status by our backend team.</p>
+            <p className='payment-verification-p2'>2.Enter your name, Progeni ID, College name, Mobile number from which the payment was made and upload your transaction screenshot too in the google form below.</p>
             <div className="verify-btn"><button className="google-form-btn" onClick={handlePaymentClick}>Google Form</button></div>
           </div>
         </div>

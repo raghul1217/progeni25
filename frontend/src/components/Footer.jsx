@@ -16,18 +16,19 @@ const Footer = () => {
           <div className="contact-numbers">
             <div className="people-contact">
               <i class="fas fa-phone"></i>
-              <p>Jegan K - GS : 8220634803</p>
+              <p>Jegan K (GS) - 8220634803</p>
             </div>
 
             <div className="people-contact">
               <i class="fas fa-phone"></i>
-              <p>Megha Harthana S - GS : 6381931373</p>
+              <p>Megha Harthana S (GS) - 6381931373</p>
             </div>
             
             <div className="people-contact">
               <i class="fas fa-phone"></i>
-              <p>Devakumar V - OC : 9025635039</p>
+              <p>Devakumar V (OC) - 9025635039</p>
             </div>
+            
           </div>
 
           <div className="social-icons">

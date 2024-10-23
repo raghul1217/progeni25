@@ -43,7 +43,7 @@ const Footer = () => {
             </a>
             </div>
             <div className="social-icons-div">
-            <a href="mailto:someone@example.com">
+            <a href="mailto:progeni25.0cse@gmail.com">
               <FontAwesomeIcon icon={faEnvelope} />
             </a>
             </div>

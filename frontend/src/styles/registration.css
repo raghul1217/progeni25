@@ -131,8 +131,7 @@
 
 
 /* General Toastify styles for all devices */
-.toastify-container,
-.Toastify__toast-container {
+.toastify-container {
     font-family: Arial, sans-serif;
     font-size: 1rem;
     background-color: rgba(0, 0, 0, 0.9);

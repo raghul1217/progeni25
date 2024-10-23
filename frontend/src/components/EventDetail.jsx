@@ -177,28 +177,39 @@ const EventDetail = () => {
       heading: "GALACTIC HACKSPRINT",
       fullDescription:
         "Join the ultimate brainstorming event Galactic Hacksprint as part of our symposium. Participants will tackle one of five real-world problem statements from our website, presenting innovative, tech-based solutions. Each team, consisting of 1 to 3 members, will have a maximum of 5 minutes to present, with alarms at the 3rd and 5th minutes to ensure strict time adherence. Exceeding the limit will result in mark deductions. While final products or prototypes are encouraged, creativity and practicality are key. Get ready to dive into challenges, think outside the box, and present solutions that make a difference!",
-      selectionProcess: [
-        {
-          subheading: "Email Submission:",
-          description:
-            "Teams must email their abstract (max 200 words) outlining the problem, solution, and impact to the email (hacksprint.gcesalem@gmail.com).",
-        },
-        {
-          subheading: "Abstract Evaluation:",
-          description:
-            "Abstracts will be evaluated based on clarity, innovation, feasibility.",
-        },
-        {
-          subheading: "Notification:",
-          description:
-            "Teams will be notified via email whether they are selected or not.",
-        },
-        {
-          subheading: "PPT Submission:",
-          description:
-            "Selected teams must submit a detailed PPT explaining their idea, including the implementation plan, technology stack, and expected outcomes, to the same email address (hacksprint.gcesalem@gmail.com).",
-        },
-      ],
+        selectionProcess: [
+          {
+            subheading: "Email Submission:",
+            description: (
+              <>
+                Teams must email their abstract (max 200 words) outlining the problem, solution, and impact to the email{" "}
+                <a href="mailto:hacksprint.gcesalem@gmail.com" style={{ color: '#3498db', textDecoration: 'underline' }}>
+                  hacksprint.gcesalem@gmail.com
+                </a>
+              </>
+            ),
+          },
+          {
+            subheading: "Abstract Evaluation:",
+            description: "Abstracts will be evaluated based on clarity, innovation, and feasibility.",
+          },
+          {
+            subheading: "Notification:",
+            description: "Teams will be notified via email whether they are selected or not.",
+          },
+          {
+            subheading: "PPT Submission:",
+            description: (
+              <>
+                Selected teams must submit a detailed PPT explaining their idea, including the implementation plan, technology stack, and expected outcomes, to the same email address{" "}
+                <a href="mailto:hacksprint.gcesalem@gmail.com" style={{ color: '#3498db', textDecoration: 'underline' }}>
+                  hacksprint.gcesalem@gmail.com
+                </a>
+              </>
+            ),
+          },
+        ],
+        
       guidelines: [
         {
           description:

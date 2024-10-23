@@ -5,10 +5,22 @@ import gpay1 from '../assets/gpay1.jpg';
 
 const Payment = () => {
   const [copySuccess, setCopySuccess] = useState(false); // Boolean to control visibility
-  const upiId = 'devakumarv2234@oksbi'; // Replace with your actual UPI ID
+  const upiId = 'devakumarv2234@oksbi';
+  const upiId1 = 'raghulram2005@okicici'; // Replace with your actual UPI ID
 
   const handleCopy = () => {
     navigator.clipboard.writeText(upiId)
+      .then(() => {
+        setCopySuccess(true); // Show the success message
+        setTimeout(() => setCopySuccess(false), 2000); // Hide the message after 2 seconds
+      })
+      .catch(() => {
+        setCopySuccess(false); // Reset if copying fails
+      });
+  };
+
+  const handleCopy1 = () => {
+    navigator.clipboard.writeText(upiId1)
       .then(() => {
         setCopySuccess(true); // Show the success message
         setTimeout(() => setCopySuccess(false), 2000); // Hide the message after 2 seconds
@@ -36,7 +48,7 @@ const Payment = () => {
             </div>
             <div className="upi-info">
               <p className="upi-id">raghulram2005@okicici</p>
-              <button className="copy-btn" onClick={handleCopy}>Copy UPI ID</button>
+              <button className="copy-btn" onClick={handleCopy1}>Copy UPI ID</button>
             </div>
             <span className={`copy-success ${copySuccess ? 'visible' : ''}`}>UPI ID copied!</span>
           </div>

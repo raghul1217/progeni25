@@ -224,3 +224,14 @@
     justify-content: flex-end;
   }
 }
+
+@media (max-width: 320px){
+    .left-side{
+      padding: 8px;
+      width: 90%;
+    }
+
+    .people-contact p{
+      font-size: 15px;
+    }
+}

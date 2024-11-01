@@ -61,7 +61,7 @@
 
 /* Contact numbers and social icons alignment */
 .contact-numbers {
-  width: 100%;
+  width: 85%;
 }
 
 .people-contact {
@@ -76,12 +76,13 @@
   display: flex;
   gap: 5px;
   align-items: center;
-  flex: 2;
+  flex: 1;
 }
 
 .people-contact .align2 {
   display: flex;
   flex: 1;
+  justify-content: flex-end;
 }
 
 .social-icons {
@@ -93,8 +94,8 @@
 .social-icons-div {
   background: linear-gradient(270deg, rgb(238, 0, 255) 0%, rgb(165, 0, 255) 100%);
   border-radius: 50%;
-  width: 32px;
-  height: 32px;
+  width: 35px;
+  height: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -144,7 +145,7 @@
 .location-icon {
   margin-right: 5px;
   color: #dd10dd;
-  font-size: 18px;
+  font-size: 25px;
 }
 
 .footer-gmap {
@@ -185,7 +186,7 @@
   }
   .left-side{
     width: 100%;
-    padding: 10px 30px;
+    padding: 10px 25px;
   }
 
   .social-icons {
@@ -208,5 +209,18 @@
 
   .footer-p {
     font-size: 16px;
+  }
+
+  .contact-numbers{
+    width: 100%;
+  }
+
+  .people-contact .align1{
+    flex: 2;
+  }
+
+  .people-contact .align2{
+    flex: 1;
+    justify-content: flex-end;
   }
 }

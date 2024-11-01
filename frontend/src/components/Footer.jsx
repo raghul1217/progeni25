@@ -15,18 +15,70 @@ const Footer = () => {
         <h4>Contact Us</h4>
           <div className="contact-numbers">
             <div className="people-contact">
+              <div className="align1">
               <i class="fas fa-phone"></i>
-              <p>Jegan K (GS) - 8220634803</p>
+              <p>Jegan K (GS)</p>
+              </div>
+              <div className="align2">
+              <p>: 8220634803</p>
+              </div>
             </div>
 
             <div className="people-contact">
+              <div className="align1">
               <i class="fas fa-phone"></i>
-              <p>Megha Harthana S (GS) - 6381931373</p>
+              <p>Megha Harthana S (GS)</p>
+              </div>
+              <div className="align2">
+              <p>: 6381931373</p>
+              </div>
             </div>
-            
+
             <div className="people-contact">
+              <div className="align1">
               <i class="fas fa-phone"></i>
-              <p>Devakumar V (OC) - 9025635039</p>
+              <p>Sanmathi A (OC)</p>
+              </div>
+              <div className="align2">
+              <p>: 6369306199</p>
+              </div>
+            </div>
+
+            <div className="people-contact">
+              <div className="align1">
+              <i class="fas fa-phone"></i>
+              <p>Roja R (OC)</p>
+              </div>
+              <div className="align2">
+              <p>: 7418412386</p>
+              </div>
+            </div>
+            <div className="people-contact">
+              <div className="align1">
+              <i class="fas fa-phone"></i>
+              <p>Devakumar V (OC)</p>
+              </div>
+              <div className="align2">
+              <p>: 9025635039</p>
+              </div>
+            </div>
+            <div className="people-contact">
+              <div className="align1">
+              <i class="fas fa-phone"></i>
+              <p>Vinothkumar J (OC)</p>
+              </div>
+              <div className="align2">
+              <p>: 8870555504</p>
+              </div>
+            </div>
+            <div className="people-contact">
+              <div className="align1">
+              <i class="fas fa-phone"></i>
+              <p>Nadish Balagi C (OC)</p>
+              </div>
+              <div className="align2">
+              <p>: 8190067804</p>
+              </div>
             </div>
             
           </div>

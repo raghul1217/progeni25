@@ -81,6 +81,10 @@ body {
   font-size: 18px;
 }
 
+#techevent{
+  margin-top: 30px;
+}
+
 /* For Tablets: 2 cards per row */
 @media (min-width: 768px) {
   .events-container {
@@ -128,7 +132,7 @@ body {
   background-image: url("../assets/glitterbg.jpeg");
   background-position: center center;
   transition: all 0.5s ease-in-out;
-  border-radius: 5px;
+  border-radius: 10px;
   height: 320px;
 }
 
@@ -141,7 +145,7 @@ body {
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.811);
-  border-radius: 0px 0px 5px 5px;
+  border-radius: 0px 0px 10px 10px;
   box-shadow: rgba(0, 115, 255, 0.925) 0px 20px 50px -25px;
   transition: all 0.5s ease-in-out;
   padding: 50px 25px 25px 25px;
@@ -203,7 +207,7 @@ body {
   height: 60px;
   width: 60px;
   background-color: rgb(0, 0, 0);
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 10px;
   box-shadow: rgb(0, 102, 255) 0px 20px 60px 0px, rgb(0, 200, 255) 0px 18px 36px -18px;
   transform: translate3d(0px, 0px, 50px);

@@ -44,7 +44,7 @@ const Events = () => {
     <div className="events-wrapper" id='events'>
       {/* <h1 className="main-heading">Upcoming Events</h1> */}
       <div className="event-section">
-        <div className="eventpage2-head special-head"><h2 className="event-type-heading">Tech Events</h2></div>
+        <div className="eventpage2-head special-head"><h2 className="event-type-heading" id="techevent">Tech Events</h2></div>
         <div className="events-container">
           {techEvents.map((event) => (
             <EventCard key={event.id} {...event} uniqueId={`tech-event-${event.id}`} />

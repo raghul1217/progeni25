@@ -194,6 +194,27 @@ const EventDetail = () => {
             description: "Abstracts will be evaluated based on clarity, innovation, and feasibility.",
           },
           {
+            subheading: "Sample Abstract:",
+            description: (
+              <>
+                  <button
+                  onClick={() => window.open('/sample-abstract.pdf', '_blank')}
+                  style={{
+                      color: '#3498db', // Vibrant blue color
+                      textDecoration: 'underline', // Underlined text
+                      border: 'none',
+                      cursor: 'pointer',
+                      fontSize: '16px',
+                      backgroundColor: 'transparent' // Transparent background for a clean look
+                  }}
+              >
+                  Download Sample Abstract
+              </button>
+
+              </>
+          ),
+          },
+          {
             subheading: "Notification:",
             description: "Teams will be notified via email whether they are selected or not.",
           },
@@ -256,6 +277,11 @@ const EventDetail = () => {
           title: "Health Care:",
           description:
             "Diagnosing rare diseases can be a significant challenge for healthcare professionals. There is a pressing need for an AI-driven tool that analyzes patient symptoms, medical history, and relevant clinical data to assist doctors in identifying potential rare diseases more efficiently.",
+        },
+        {
+          title: "Note:",
+          description:
+            "Other than these 5 five mentioned above will be given second preference during selection process.",
         },
       ],
     },

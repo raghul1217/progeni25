@@ -83,7 +83,10 @@ const Home = () => {
                   REGISTER
                 </button>
               </Link>
+              <p>Online registration - ₹200/-</p>
+              <p>Onspot registration - ₹250/-</p>
             </div>
+            <p>Last Date to register - 12/11/2024</p>
           </div>
           <div className="home-content2">
             <img src={pilot} alt="" />

@@ -153,6 +153,14 @@ font-family: "space mono", sans-serif;
     gap: 10px;
     margin-top: 10px;
     font-family: 'AlphaCentauri';
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.home-btn a{
+    margin-bottom: 10px;
 }
 
 /* Neon glow effect for the register button */

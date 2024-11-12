@@ -46,7 +46,7 @@ function Header() {
                         <li><a href="#home" onClick={() => handleLinkClick('/')}>Home</a></li>
                         <li><a href="#events" onClick={() => handleLinkClick('/#events')}>Events</a></li>
                         <li><a href="#profile" onClick={() => handleLinkClick('/profile')}>Profile</a></li>
-                        <li><a href="#register" onClick={() => handleLinkClick('/register')}>Register</a></li>
+                        <li><a href="#register" onClick={() => handleLinkClick('#')}>Register</a></li>
                         <li><a href="#payment" onClick={() => handleLinkClick('/payment')}>Payment</a></li>
                         <li><a href="#footer" onClick={() => handleLinkClick('/#footer')}>Contact</a></li>
 

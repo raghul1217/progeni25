@@ -78,15 +78,14 @@ const Home = () => {
             </div>
             <p>A national level technical symposium will be conducted by Department of Computer science and Engineering, Government College of Engineering, Salem.</p>
             <div className="home-btn">
-              <Link to="/register" id='neon-btn'>
+              <Link to="#" id='neon-btn'>
                 <button className='register-btn'>
                   REGISTER
                 </button>
               </Link>
-              <p>Online registration - ₹200/-</p>
+              <p>Online registration closed!</p>
               <p>Onspot registration - ₹250/-</p>
             </div>
-            <p>Last Date to register - 12/11/2024</p>
           </div>
           <div className="home-content2">
             <img src={pilot} alt="" />

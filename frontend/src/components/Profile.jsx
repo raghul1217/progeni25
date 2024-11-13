@@ -105,11 +105,14 @@ const Profile = () => {
             {/* Conditionally render the "Proceed to pay" button only if payment is not verified */}
             {!data.paymentStatus && (
               <div className="payment-proceed">
-                <Link to="/payment">
+              
+                <Link to="#">
                   <button className="custom-btn-pay btn-11">Proceed to pay</button>
                 </Link>
               </div>
             )}
+
+            {/* /payment  /register --> # */}
 
             <div className="profile-info">
               <div className="info-label">

@@ -47,7 +47,7 @@ function Header() {
                         <li><a href="#events" onClick={() => handleLinkClick('/#events')}>Events</a></li>
                         <li><a href="#profile" onClick={() => handleLinkClick('/profile')}>Profile</a></li>
                         <li><a href="#register" onClick={() => handleLinkClick('#')}>Register</a></li>
-                        <li><a href="#payment" onClick={() => handleLinkClick('/payment')}>Payment</a></li>
+                        <li><a href="#payment" onClick={() => handleLinkClick('#')}>Payment</a></li>
                         <li><a href="#footer" onClick={() => handleLinkClick('/#footer')}>Contact</a></li>
 
                         {/* Conditionally render Login or Logout button */}
